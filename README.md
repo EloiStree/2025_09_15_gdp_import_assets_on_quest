@@ -1,2 +1,2 @@
-# 2025_09_15_gdp_import_assets_on_quest
+# Import Assets On Quest
 Code design to import asset around the project on Quest3.
