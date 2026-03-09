@@ -1,5 +1,10 @@
+class_name ImporterFetchFilesInExternalFolder
+extends Node
+
+
 # Untested code to test on the Quest ASAP
 
+class_name ImporterXrExternalToLocalGodotDirectoryOnQuest
 extends Node
 
 @export var source_relative: String = "Download"

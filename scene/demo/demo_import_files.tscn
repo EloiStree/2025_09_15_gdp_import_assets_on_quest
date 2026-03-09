@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://bij1muh8p6x64"]
+
+[ext_resource type="Script" uid="uid://l3e6wihcg55t" path="res://addons/2025_09_15_gdp_import_assets_on_quest/script/importer_xr_external_to_local_godot_directory_on_quest.gd" id="1_fpuk4"]
+[ext_resource type="Script" uid="uid://d2mhywva80irw" path="res://addons/2025_09_15_gdp_import_assets_on_quest/script/ui_android_to_godot_relative_files_debug.gd" id="2_psu3a"]
+
+[node name="DemoImportFiles" type="Control" unique_id=1070715174]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="." unique_id=844421460]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.132
+anchor_bottom = 0.37500003
+offset_right = -0.06399536
+offset_bottom = -1.5258789e-05
+
+[node name="ImporterXrExternalToLocalGodotDirectoryOnQuest" type="Node" parent="Button" unique_id=1069849860]
+script = ExtResource("1_fpuk4")
+metadata/_custom_type_script = "uid://l3e6wihcg55t"
+
+[node name="TextEdit Android" type="TextEdit" parent="." unique_id=1069925534]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25100002
+anchor_top = 0.42100003
+anchor_right = 0.661
+anchor_bottom = 0.89400005
+offset_left = 23.847992
+offset_top = -86.808014
+offset_right = 0.5279541
+offset_bottom = -0.31201172
+
+[node name="TextEdit Godot" type="TextEdit" parent="." unique_id=2113004768]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.661
+anchor_top = 0.287
+anchor_right = 1.0
+anchor_bottom = 0.89400005
+offset_left = 11.527954
+offset_top = 0.024002075
+offset_right = -2.0
+offset_bottom = -0.31201172
+
+[node name="LineEdit Godot" type="LineEdit" parent="." unique_id=1376941532]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.66800004
+anchor_right = 1.0
+anchor_bottom = 0.245
+
+[node name="LineEdit Godot2" type="LineEdit" parent="." unique_id=540926309]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.66800004
+anchor_right = 1.0
+anchor_bottom = 0.245
+offset_top = 127.76001
+
+[node name="LineEdit Android" type="LineEdit" parent="." unique_id=1264769741]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.277
+anchor_right = 0.634
+anchor_bottom = 0.22800002
+
+[node name="LineEdit Android2" type="LineEdit" parent="." unique_id=1967116211]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.277
+anchor_right = 0.634
+anchor_bottom = 0.22800002
+offset_top = 116.744
+
+[node name="Node" type="Node" parent="." unique_id=1322207187 node_paths=PackedStringArray("relative_in_android", "relative_in_godot", "absolute_in_android", "absolute_in_godot", "files_in_android", "files_in_godot")]
+script = ExtResource("2_psu3a")
+relative_in_android = NodePath("../LineEdit Android")
+relative_in_godot = NodePath("../LineEdit Godot")
+absolute_in_android = NodePath("../LineEdit Android2")
+absolute_in_godot = NodePath("../LineEdit Godot2")
+files_in_android = NodePath("../TextEdit Android")
+files_in_godot = NodePath("../TextEdit Godot")
